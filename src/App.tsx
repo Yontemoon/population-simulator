@@ -16,20 +16,20 @@ export default function App() {
 
   const handleNewCountry = (newCountry: TCountry) => {
     setCountryList((prevCountryList) => {
-      const countryExists = prevCountryList.find(
-        (country) => country.country === newCountry.country
-      );
+      let countryFound = false;
+      const updatedCountryList = prevCountryList.map((country) => {
+        if (country.country === newCountry.country) {
+          countryFound = true;
+          return { ...country, count: country.count + 1 };
+        }
+        return country;
+      });
 
-      if (!countryExists) {
-        return [...prevCountryList, { ...newCountry, count: 1 }];
-      } else {
-        return prevCountryList.map((country) => {
-          if (newCountry.country === country.country) {
-            return { ...country, count: country.count + 1 };
-          }
-          return country;
-        });
+      if (!countryFound) {
+        updatedCountryList.push({ ...newCountry, count: 1 });
       }
+
+      return updatedCountryList.sort((a, b) => b.count - a.count);
     });
   };
 
