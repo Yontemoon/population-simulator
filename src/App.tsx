@@ -1,9 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+import "./App.css";
 import countiesGeo from "./json/countries.geo.json";
-import GeoChart from "./components/GeoChart";
+import GeoChart from "./components/GeoChart/GeoChart";
 import { generateCountry } from "./helper/countries";
 import { useEffect, useState } from "react";
 import { TCountryCount, TCountry, TGeoJSON } from "./types";
+import Card from "./components/Card/Card";
 
 const countiesGeoTyped = countiesGeo as TGeoJSON;
 
@@ -45,21 +47,25 @@ export default function App() {
 
   useEffect(() => {
     setTotalCountries(totalCounties + 1);
-  }, [countryList]);
+  }, [countryList, setCountryList]);
 
   return (
-    <>
-      <h1>Map Testing</h1>
-      <h2>Total: {totalCounties}</h2>
-      <GeoChart data={countiesGeoTyped} selectedCountry={selectedCountry} />
-      <h3>{selectedCountry}</h3>
-      <ul>
-        {countryList.map((country, i) => (
-          <li key={i}>
-            {country.country} - Count: {country.count}
-          </li>
-        ))}
-      </ul>
-    </>
+    <main className="container">
+      <div className="main-section">
+        <h1>Birth Simulator</h1>
+        <h2>Total: {totalCounties}</h2>
+        <GeoChart data={countiesGeoTyped} selectedCountry={selectedCountry} />
+        <h3>{selectedCountry}</h3>
+        <ol>
+          {countryList.map((country, i) => (
+            <Card key={i}>
+              <li>
+                {country.country} - Count: {country.count}
+              </li>
+            </Card>
+          ))}
+        </ol>
+      </div>
+    </main>
   );
 }

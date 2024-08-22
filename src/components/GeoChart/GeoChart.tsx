@@ -1,7 +1,8 @@
 import { select, geoPath, geoMercator } from "d3";
 import { useEffect, useRef } from "react";
-import useResizeObserver from "../hooks/useResizeObserver";
-import { TGeoJSON, TGeoJSONFeature } from "../types";
+import useResizeObserver from "../../hooks/useResizeObserver";
+import { TGeoJSON, TGeoJSONFeature } from "../../types";
+import "./GeoChart.css";
 
 type PropTypes = {
   data: TGeoJSON;
@@ -12,7 +13,7 @@ const GeoChart = ({ data, selectedCountry }: PropTypes) => {
   const svgRef = useRef<SVGSVGElement>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
   const dimensions = useResizeObserver(wrapperRef);
-
+  console.log(dimensions);
   useEffect(() => {
     if (svgRef.current && wrapperRef.current) {
       const svg = select(svgRef.current);
@@ -21,8 +22,8 @@ const GeoChart = ({ data, selectedCountry }: PropTypes) => {
 
       const projection = geoMercator()
         .fitSize([width, height], data)
-        .scale(200)
         .translate([width / 2, height / 1.4]);
+      // .scale(200)
       const pathGenerator = geoPath().projection(projection);
 
       svg
@@ -54,7 +55,7 @@ const GeoChart = ({ data, selectedCountry }: PropTypes) => {
   }, [selectedCountry]);
 
   return (
-    <div ref={wrapperRef} style={{ marginBottom: "2rem" }} className="geoChart">
+    <div ref={wrapperRef} className="geoChart-container">
       <svg ref={svgRef}></svg>
     </div>
   );

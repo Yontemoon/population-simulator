@@ -13,7 +13,7 @@ export type TCumulativeDistribution = {
   cumulativeValue: number;
 };
 
-type GeoJSONFeature = {
+export type TGeoJSONFeature = {
   type: "Feature";
   properties: {
     featurecla: string;
@@ -194,5 +194,5 @@ type GeoJSONFeature = {
 
 export type TGeoJSON = {
   type: "FeatureCollection";
-  features: GeoJSONFeature[];
+  features: TGeoJSONFeature[];
 };
