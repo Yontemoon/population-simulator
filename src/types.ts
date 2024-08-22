@@ -1,6 +1,7 @@
 export type TCountry = {
   country: string;
-  abbreviation: string;
+  abbreviation_3: string;
+  abbreviation_2: string;
   value: number;
 };
 

@@ -1,6 +1,6 @@
 import countries from "../json/countries.json";
 import { TOTAL_BIRTHS } from "./constants";
-import { TCountryCount, TCumulativeDistribution } from "../types";
+import { TCumulativeDistribution } from "../types";
 
 const cumulativeDistribution = [] as TCumulativeDistribution[];
 
@@ -34,10 +34,5 @@ export const generateCountry = () => {
     }
   }
 
-  //   console.log(cumulativeDistribution[low].country);
   return cumulativeDistribution[low].country;
-};
-
-export const sortCountries = (countries: TCountryCount[]) => {
-  console.log(countries);
 };

@@ -6,9 +6,11 @@ import { generateCountry } from "./helper/countries";
 import { useEffect, useState } from "react";
 import { TCountryCount, TCountry, TGeoJSON } from "./types";
 import Card from "./components/Card/Card";
+import { getTime } from "./helper/utils";
+import Footer from "./components/Footer/Footer";
 
 const countiesGeoTyped = countiesGeo as TGeoJSON;
-
+const currentTime = getTime();
 export default function App() {
   const [countryList, setCountryList] = useState<TCountryCount[] | []>([]);
   const [totalCounties, setTotalCountries] = useState<number>(0);
@@ -36,9 +38,9 @@ export default function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       const country = generateCountry();
-      setSelectedCountry(country.abbreviation);
+      setSelectedCountry(country.abbreviation_3);
       handleNewCountry(country);
-    }, 1000);
+    }, 250);
     setSelectedCountry(null);
     return () => {
       clearInterval(interval);
@@ -50,21 +52,33 @@ export default function App() {
   }, [countryList, setCountryList]);
 
   return (
-    <main className="container">
-      <div className="main-section">
+    <main>
+      <div className="container">
         <h1>Birth Simulator</h1>
-        <h2>Total: {totalCounties}</h2>
+
         <GeoChart data={countiesGeoTyped} selectedCountry={selectedCountry} />
-        <h3>{selectedCountry}</h3>
-        <ol>
+        <div className="countries-stat">
+          <p>{selectedCountry}</p>
+          <p>
+            Total Births since {currentTime}: {totalCounties}
+          </p>
+        </div>
+
+        <ol className="countries-list">
           {countryList.map((country, i) => (
             <Card key={i}>
               <li>
+                <img
+                  className="country-flat"
+                  src={`/flags/${country.abbreviation_2.toLowerCase()}.png`}
+                  alt={country.country}
+                />
                 {country.country} - Count: {country.count}
               </li>
             </Card>
           ))}
         </ol>
+        <Footer />
       </div>
     </main>
   );

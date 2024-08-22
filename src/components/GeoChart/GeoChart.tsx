@@ -13,7 +13,11 @@ const GeoChart = ({ data, selectedCountry }: PropTypes) => {
   const svgRef = useRef<SVGSVGElement>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
   const dimensions = useResizeObserver(wrapperRef);
-  console.log(dimensions);
+
+  const mouseoverEffect = function (d) {
+    console.log(d);
+  };
+
   useEffect(() => {
     if (svgRef.current && wrapperRef.current) {
       const svg = select(svgRef.current);
@@ -22,8 +26,8 @@ const GeoChart = ({ data, selectedCountry }: PropTypes) => {
 
       const projection = geoMercator()
         .fitSize([width, height], data)
-        .translate([width / 2, height / 1.4]);
-      // .scale(200)
+        .translate([width / 2, height / 1.44])
+        .scale(160);
       const pathGenerator = geoPath().projection(projection);
 
       svg
@@ -33,7 +37,8 @@ const GeoChart = ({ data, selectedCountry }: PropTypes) => {
         .attr("id", (feature: TGeoJSONFeature) => feature.properties.adm0_a3)
         .attr("class", "country")
         .attr("d", (feature: TGeoJSONFeature) => pathGenerator(feature))
-        .attr("fill", "#ccc");
+        .attr("fill", "#ccc")
+        .on("mouseover", mouseoverEffect);
     }
   }, [data, dimensions]);
 
@@ -48,7 +53,7 @@ const GeoChart = ({ data, selectedCountry }: PropTypes) => {
         .selectAll<SVGPathElement, TGeoJSONFeature>(".country")
         .attr("fill", (feature) => {
           return feature.properties.adm0_a3 === selectedCountry
-            ? "red"
+            ? "#197278"
             : "#ccc";
         });
     }
