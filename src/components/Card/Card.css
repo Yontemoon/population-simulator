@@ -1,13 +1,10 @@
 .card-container {
-  padding-top: 10px;
-  border: black solid 1px;
+  border: black solid 2px;
   margin-bottom: 10px;
   display: grid;
   width: 100%;
   text-align: center;
   border-radius: 5px;
-  /* margin-left: 1rem; */
-  /* margin-right: 1rem; */
 }
 
 @media (min-width: 1200px) {
