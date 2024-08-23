@@ -5,8 +5,22 @@
   border: solid black 2px;
   border-radius: 5px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .geoChart-container svg {
   box-sizing: border-box;
+}
+
+.geoChart-tooltip {
+  border: 2px solid black;
+  padding: 5px 10px;
+  z-index: 5;
+  background: #edddd4;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.country {
+  stroke: #999;
 }

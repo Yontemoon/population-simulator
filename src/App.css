@@ -24,10 +24,6 @@ svg {
   height: 100%;
 }
 
-.country {
-  stroke: #999;
-}
-
 .countries-stat {
   display: flex;
   justify-content: space-between;

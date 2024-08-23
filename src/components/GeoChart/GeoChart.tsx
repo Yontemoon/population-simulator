@@ -1,4 +1,4 @@
-import { select, geoPath, geoMercator } from "d3";
+import { select, geoPath, geoMercator, pointer } from "d3";
 import { useEffect, useRef } from "react";
 import useResizeObserver from "../../hooks/useResizeObserver";
 import { TGeoJSON, TGeoJSONFeature } from "../../types";
@@ -13,9 +13,55 @@ const GeoChart = ({ data, selectedCountry }: PropTypes) => {
   const svgRef = useRef<SVGSVGElement>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
   const dimensions = useResizeObserver(wrapperRef);
+  const tooltipRef = useRef<HTMLDivElement>(null);
 
-  const mouseoverEffect = function (d) {
-    console.log(d);
+  const mouseoverEffect = function (_event: PointerEvent, d: TGeoJSONFeature) {
+    console.log(d.properties.adm0_a3);
+    const toolTipDiv = tooltipRef.current;
+    const svgElement = svgRef.current;
+    if (toolTipDiv) {
+      const div = select(toolTipDiv);
+      div.transition().duration(200).style("opacity", 0.9);
+    }
+
+    if (svgElement) {
+      const svg = select(`#${d.properties.adm0_a3}`);
+      svg
+        .style("stroke", "black")
+        .style("stroke-width", "1px")
+        .style("fill", "#ACBED8");
+    }
+  };
+
+  const mousemoveEffect = function (event: PointerEvent, d: TGeoJSONFeature) {
+    const mouseCoordinates = pointer(event);
+
+    const x = mouseCoordinates[0];
+    const y = mouseCoordinates[1];
+    const tooltipDiv = tooltipRef.current;
+    if (tooltipDiv) {
+      const div = select(tooltipDiv);
+      div
+        .html(d.properties.name)
+        .style("left", x + 20 + "px")
+        .style("top", y + 20 + "px");
+    }
+  };
+
+  const mouseleaveEffect = function (_event: PointerEvent, d: TGeoJSONFeature) {
+    const tooltipDiv = tooltipRef.current;
+    const svgElement = svgRef.current;
+    if (tooltipDiv) {
+      select(tooltipDiv).transition().duration(200).style("opacity", 0);
+    }
+
+    if (svgElement) {
+      const svg = select(`#${d.properties.adm0_a3}`);
+      svg
+        .style("stroke", "#999")
+        .style("stroke-width", "1px")
+        .style("fill", "#ccc");
+    }
   };
 
   useEffect(() => {
@@ -38,7 +84,9 @@ const GeoChart = ({ data, selectedCountry }: PropTypes) => {
         .attr("class", "country")
         .attr("d", (feature: TGeoJSONFeature) => pathGenerator(feature))
         .attr("fill", "#ccc")
-        .on("mouseover", mouseoverEffect);
+        .on("mouseover", mouseoverEffect)
+        .on("mousemove", mousemoveEffect)
+        .on("mouseleave", mouseleaveEffect);
     }
   }, [data, dimensions]);
 
@@ -61,7 +109,8 @@ const GeoChart = ({ data, selectedCountry }: PropTypes) => {
 
   return (
     <div ref={wrapperRef} className="geoChart-container">
-      <svg ref={svgRef}></svg>
+      <div className="geoChart-tooltip" ref={tooltipRef} />
+      <svg ref={svgRef} id="geoChart"></svg>
     </div>
   );
 };

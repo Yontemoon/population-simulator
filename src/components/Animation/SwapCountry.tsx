@@ -1,19 +1,13 @@
 import { motion } from "framer-motion";
 
-const SwapCountry = ({
-  children,
-  key,
-}: {
-  children: React.ReactNode;
-  key: string;
-}) => {
+const SwapCountry = ({ children }: { children: React.ReactNode }) => {
   const spring = {
     type: "tween",
     damping: 20,
     stiffness: 300,
   };
   return (
-    <motion.li key={key} layout transition={spring}>
+    <motion.li layout transition={spring}>
       {children}
     </motion.li>
   );
