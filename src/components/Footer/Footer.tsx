@@ -1,7 +1,7 @@
 import "./Footer.css";
 
 const Footer = () => {
-  return <div>TEMP FOOTER</div>;
+  return <footer className="footer-wrapper">TEMP FOOTER</footer>;
 };
 
 export default Footer;
