@@ -2,7 +2,6 @@ import "./GeoChart.css";
 import { select, geoPath, geoMercator, pointer } from "d3";
 import { useEffect, useRef } from "react";
 import { TGeoJSON, TGeoJSONFeature } from "../../types";
-// import { FeatureCollection } from "geojson";
 
 type PropTypes = {
   data: TGeoJSON;
@@ -30,7 +29,6 @@ const GeoChart = ({ data, selectedCountry }: PropTypes) => {
     if (svgElement) {
       const svg = select(`#${d.properties.adm0_a3}`);
       svg.style("stroke", "black").style("stroke-width", "1px");
-      // .style("fill", "#ACBED8");
     }
   };
 
@@ -61,10 +59,10 @@ const GeoChart = ({ data, selectedCountry }: PropTypes) => {
     if (svgElement) {
       const svg = select(`#${d.properties.adm0_a3}`);
       svg.style("stroke", "#999").style("stroke-width", "1px");
-      // .style("fill", "#ccc");
     }
   };
 
+  // TODO - SEPARATE OUT CONCERNS
   useEffect(() => {
     if (svgRef.current && wrapperRef.current) {
       const svg = select(svgRef.current);
@@ -92,24 +90,6 @@ const GeoChart = ({ data, selectedCountry }: PropTypes) => {
         .on("mouseleave", mouseleaveEffect);
     }
   }, [data, wrapperRef, svgRef, selectedCountry]);
-
-  // useEffect(() => {
-  //   if (selectedCountry && svgRef.current) {
-  //     const svg = select(svgRef.current);
-  //     // console.log(selectedCountry);
-  //     svg
-  //       .selectAll<SVGPathElement, TGeoJSONFeature>(".country")
-  //       .attr("fill", "#ccc");
-  //     svg
-  //       .selectAll<SVGPathElement, TGeoJSONFeature>(".country")
-  //       .attr("fill", (feature) => {
-  //         // console.log(feature);
-  //         return feature.properties.adm0_a3 === selectedCountry
-  //           ? "#197278"
-  //           : "#ccc";
-  //       });
-  //   }
-  // }, [selectedCountry]);
 
   return (
     <div ref={wrapperRef} className="geoChart-container">
