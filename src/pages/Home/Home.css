@@ -12,22 +12,6 @@ svg {
   fill: #197278;
 }
 
-.countries-list {
-  width: 100%;
-  margin: 0 auto;
-  align-items: center;
-  padding-right: 0;
-  padding-left: 0;
-}
-
-.country-flat {
-  aspect-ratio: 16/9;
-  width: 32px;
-  height: auto;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-
 @media (min-width: 1200px) {
   .countries-list {
     max-width: 1000px;

@@ -15,3 +15,7 @@
 .nav-entry {
   font-size: 1.125rem;
 }
+
+.nav-active {
+  text-decoration: underline;
+}

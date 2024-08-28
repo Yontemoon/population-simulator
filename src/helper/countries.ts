@@ -1,25 +1,26 @@
-import countries from "../json/countries.json";
-import { TOTAL_BIRTHS } from "./constants";
 import { TCumulativeDistribution } from "../types";
+import { TCountryJSON } from "../types";
 
-const cumulativeDistribution = [] as TCumulativeDistribution[];
-
-export const precomputeCumulativeDistrubution = () => {
+export const precomputeCumulativeDistrubution = (countryJSON: TCountryJSON) => {
+  const cumulativeDistribution = [] as TCumulativeDistribution[];
   let sum = 0;
-  for (let i = 0; i < countries.country.length; i++) {
-    sum = sum + countries.country[i].value;
+  for (let i = 0; i < countryJSON.country.length; i++) {
+    sum = sum + countryJSON.country[i].value;
     cumulativeDistribution.push({
-      country: countries.country[i],
+      country: countryJSON.country[i],
       cumulativeValue: sum,
     });
   }
+  console.log(cumulativeDistribution);
   return cumulativeDistribution;
 };
 
-precomputeCumulativeDistrubution();
-
-export const generateCountry = () => {
-  const randomValue = Math.random() * TOTAL_BIRTHS;
+export const generateCountry = (
+  cumulativeDistribution: TCumulativeDistribution[]
+) => {
+  const total =
+    cumulativeDistribution[cumulativeDistribution.length - 1].cumulativeValue;
+  const randomValue = Math.random() * total;
 
   let low = 0;
   let high = cumulativeDistribution.length - 1;

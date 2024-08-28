@@ -1,0 +1,22 @@
+.countries-list {
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.country-flag {
+  aspect-ratio: 16/9;
+  width: 48px;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+
+.country-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

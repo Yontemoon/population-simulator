@@ -1,0 +1,1426 @@
+{
+  "country": [
+    {
+      "country": "China",
+      "value": 11684177,
+      "abbreviation_3": "CHN",
+      "abbreviation_2": "CN"
+    },
+    {
+      "country": "India",
+      "value": 9507008,
+      "abbreviation_3": "IND",
+      "abbreviation_2": "IN"
+    },
+    {
+      "country": "United States",
+      "value": 2975658,
+      "abbreviation_3": "USA",
+      "abbreviation_2": "US"
+    },
+    {
+      "country": "Nigeria",
+      "value": 2675442,
+      "abbreviation_3": "NGA",
+      "abbreviation_2": "NG"
+    },
+    {
+      "country": "Indonesia",
+      "value": 2117706,
+      "abbreviation_3": "IDN",
+      "abbreviation_2": "ID"
+    },
+    {
+      "country": "Russia",
+      "value": 1794857,
+      "abbreviation_3": "RUS",
+      "abbreviation_2": "RU"
+    },
+    {
+      "country": "Pakistan",
+      "value": 1600313,
+      "abbreviation_3": "PAK",
+      "abbreviation_2": "PK"
+    },
+    {
+      "country": "Japan",
+      "value": 1524430,
+      "abbreviation_3": "JPN",
+      "abbreviation_2": "JP"
+    },
+    {
+      "country": "Brazil",
+      "value": 1494154,
+      "abbreviation_3": "BRA",
+      "abbreviation_2": "BR"
+    },
+    {
+      "country": "Germany",
+      "value": 1034140,
+      "abbreviation_3": "DEU",
+      "abbreviation_2": "DE"
+    },
+    {
+      "country": "Democratic Republic of the Congo",
+      "value": 901851,
+      "abbreviation_3": "COD",
+      "abbreviation_2": "CD"
+    },
+    {
+      "country": "Bangladesh",
+      "value": 859075,
+      "abbreviation_3": "BGD",
+      "abbreviation_2": "BD"
+    },
+    {
+      "country": "Mexico",
+      "value": 799366,
+      "abbreviation_3": "MEX",
+      "abbreviation_2": "MX"
+    },
+    {
+      "country": "Ethiopia",
+      "value": 767018,
+      "abbreviation_3": "ETH",
+      "abbreviation_2": "ET"
+    },
+    {
+      "country": "Philippines",
+      "value": 716490,
+      "abbreviation_3": "PHL",
+      "abbreviation_2": "PH"
+    },
+    {
+      "country": "Italy",
+      "value": 663448,
+      "abbreviation_3": "ITA",
+      "abbreviation_2": "IT"
+    },
+    {
+      "country": "Vietnam",
+      "value": 659980,
+      "abbreviation_3": "VNM",
+      "abbreviation_2": "VN"
+    },
+    {
+      "country": "United Kingdom",
+      "value": 653747,
+      "abbreviation_3": "GBR",
+      "abbreviation_2": "GB"
+    },
+    {
+      "country": "Thailand",
+      "value": 637306,
+      "abbreviation_3": "THA",
+      "abbreviation_2": "TH"
+    },
+    {
+      "country": "Egypt",
+      "value": 625449,
+      "abbreviation_3": "EGY",
+      "abbreviation_2": "EG"
+    },
+    {
+      "country": "France",
+      "value": 616095,
+      "abbreviation_3": "FRA",
+      "abbreviation_2": "FR"
+    },
+    {
+      "country": "South Africa",
+      "value": 584015,
+      "abbreviation_3": "ZAF",
+      "abbreviation_2": "ZA"
+    },
+    {
+      "country": "Turkey",
+      "value": 551598,
+      "abbreviation_3": "TUR",
+      "abbreviation_2": "TR"
+    },
+    {
+      "country": "Myanmar",
+      "value": 495470,
+      "abbreviation_3": "MMR",
+      "abbreviation_2": "MM"
+    },
+    {
+      "country": "Ukraine",
+      "value": 495421,
+      "abbreviation_3": "UKR",
+      "abbreviation_2": "UA"
+    },
+    {
+      "country": "Spain",
+      "value": 447463,
+      "abbreviation_3": "ESP",
+      "abbreviation_2": "ES"
+    },
+    {
+      "country": "Iran",
+      "value": 423367,
+      "abbreviation_3": "IRN",
+      "abbreviation_2": "IR"
+    },
+    {
+      "country": "Poland",
+      "value": 412310,
+      "abbreviation_3": "POL",
+      "abbreviation_2": "PL"
+    },
+    {
+      "country": "Kenya",
+      "value": 399024,
+      "abbreviation_3": "KEN",
+      "abbreviation_2": "KE"
+    },
+    {
+      "country": "Tanzania",
+      "value": 385799,
+      "abbreviation_3": "TZA",
+      "abbreviation_2": "TZ"
+    },
+    {
+      "country": "Argentina",
+      "value": 349195,
+      "abbreviation_3": "ARG",
+      "abbreviation_2": "AR"
+    },
+    {
+      "country": "South Korea",
+      "value": 345502,
+      "abbreviation_3": "KOR",
+      "abbreviation_2": "KR"
+    },
+    {
+      "country": "Sudan",
+      "value": 320491,
+      "abbreviation_3": "SDN",
+      "abbreviation_2": "SD"
+    },
+    {
+      "country": "Canada",
+      "value": 311824,
+      "abbreviation_3": "CAN",
+      "abbreviation_2": "CA"
+    },
+    {
+      "country": "Colombia",
+      "value": 282433,
+      "abbreviation_3": "COL",
+      "abbreviation_2": "CO"
+    },
+    {
+      "country": "Romania",
+      "value": 257119,
+      "abbreviation_3": "ROU",
+      "abbreviation_2": "RO"
+    },
+    {
+      "country": "North Korea",
+      "value": 255826,
+      "abbreviation_3": "PRK",
+      "abbreviation_2": "KP"
+    },
+    {
+      "country": "Angola",
+      "value": 254482,
+      "abbreviation_3": "AGO",
+      "abbreviation_2": "AO"
+    },
+    {
+      "country": "Afghanistan",
+      "value": 240296,
+      "abbreviation_3": "AFG",
+      "abbreviation_2": "AF"
+    },
+    {
+      "country": "Ivory Coast",
+      "value": 238741,
+      "abbreviation_3": "CIV",
+      "abbreviation_2": "CI"
+    },
+    {
+      "country": "Ghana",
+      "value": 237869,
+      "abbreviation_3": "GHA",
+      "abbreviation_2": "GH"
+    },
+    {
+      "country": "Uganda",
+      "value": 235583,
+      "abbreviation_3": "UGA",
+      "abbreviation_2": "UG"
+    },
+    {
+      "country": "Mozambique",
+      "value": 235520,
+      "abbreviation_3": "MOZ",
+      "abbreviation_2": "MZ"
+    },
+    {
+      "country": "Madagascar",
+      "value": 234841,
+      "abbreviation_3": "MDG",
+      "abbreviation_2": "MG"
+    },
+    {
+      "country": "Niger",
+      "value": 231746,
+      "abbreviation_3": "NER",
+      "abbreviation_2": "NE"
+    },
+    {
+      "country": "Uzbekistan",
+      "value": 221249,
+      "abbreviation_3": "UZB",
+      "abbreviation_2": "UZ"
+    },
+    {
+      "country": "Algeria",
+      "value": 214259,
+      "abbreviation_3": "DZA",
+      "abbreviation_2": "DZ"
+    },
+    {
+      "country": "Venezuela",
+      "value": 213955,
+      "abbreviation_3": "VEN",
+      "abbreviation_2": "VE"
+    },
+    {
+      "country": "Chad",
+      "value": 213123,
+      "abbreviation_3": "TCD",
+      "abbreviation_2": "TD"
+    },
+    {
+      "country": "Morocco",
+      "value": 212624,
+      "abbreviation_3": "MAR",
+      "abbreviation_2": "MA"
+    },
+    {
+      "country": "Nepal",
+      "value": 205841,
+      "abbreviation_3": "NPL",
+      "abbreviation_2": "NP"
+    },
+    {
+      "country": "Taiwan",
+      "value": 205339,
+      "abbreviation_3": "TWN",
+      "abbreviation_2": "TW"
+    },
+    {
+      "country": "Mali",
+      "value": 205047,
+      "abbreviation_3": "MLI",
+      "abbreviation_2": "ML"
+    },
+    {
+      "country": "Cameroon",
+      "value": 202882,
+      "abbreviation_3": "CMR",
+      "abbreviation_2": "CM"
+    },
+    {
+      "country": "Yemen",
+      "value": 188764,
+      "abbreviation_3": "YEM",
+      "abbreviation_2": "YE"
+    },
+    {
+      "country": "Iraq",
+      "value": 186266,
+      "abbreviation_3": "IRQ",
+      "abbreviation_2": "IQ"
+    },
+    {
+      "country": "Peru",
+      "value": 185861,
+      "abbreviation_3": "PER",
+      "abbreviation_2": "PE"
+    },
+    {
+      "country": "Australia",
+      "value": 183924,
+      "abbreviation_3": "AUS",
+      "abbreviation_2": "AU"
+    },
+    {
+      "country": "Burkina Faso",
+      "value": 183375,
+      "abbreviation_3": "BFA",
+      "abbreviation_2": "BF"
+    },
+    {
+      "country": "Malaysia",
+      "value": 181166,
+      "abbreviation_3": "MYS",
+      "abbreviation_2": "MY"
+    },
+    {
+      "country": "Somalia",
+      "value": 180554,
+      "abbreviation_3": "SOM",
+      "abbreviation_2": "SO"
+    },
+    {
+      "country": "Netherlands",
+      "value": 169320,
+      "abbreviation_3": "NLD",
+      "abbreviation_2": "NL"
+    },
+    {
+      "country": "Sri Lanka",
+      "value": 162453,
+      "abbreviation_3": "LKA",
+      "abbreviation_2": "LK"
+    },
+    {
+      "country": "Kazakhstan",
+      "value": 136388,
+      "abbreviation_3": "KAZ",
+      "abbreviation_2": "KZ"
+    },
+    {
+      "country": "Guinea",
+      "value": 131455,
+      "abbreviation_3": "GIN",
+      "abbreviation_2": "GN"
+    },
+    {
+      "country": "Hungary",
+      "value": 128063,
+      "abbreviation_3": "HUN",
+      "abbreviation_2": "HU"
+    },
+    {
+      "country": "Chile",
+      "value": 127691,
+      "abbreviation_3": "CHL",
+      "abbreviation_2": "CL"
+    },
+    {
+      "country": "Greece",
+      "value": 127018,
+      "abbreviation_3": "GRC",
+      "abbreviation_2": "GR"
+    },
+    {
+      "country": "Zimbabwe",
+      "value": 124412,
+      "abbreviation_3": "ZWE",
+      "abbreviation_2": "ZW"
+    },
+    {
+      "country": "Benin",
+      "value": 124132,
+      "abbreviation_3": "BEN",
+      "abbreviation_2": "BJ"
+    },
+    {
+      "country": "Belarus",
+      "value": 121587,
+      "abbreviation_3": "BLR",
+      "abbreviation_2": "BY"
+    },
+    {
+      "country": "Syria",
+      "value": 118900,
+      "abbreviation_3": "SYR",
+      "abbreviation_2": "SY"
+    },
+    {
+      "country": "Portugal",
+      "value": 115917,
+      "abbreviation_3": "PRT",
+      "abbreviation_2": "PT"
+    },
+    {
+      "country": "Belgium",
+      "value": 113791,
+      "abbreviation_3": "BEL",
+      "abbreviation_2": "BE"
+    },
+    {
+      "country": "Czech Republic",
+      "value": 113525,
+      "abbreviation_3": "CZE",
+      "abbreviation_2": "CZ"
+    },
+    {
+      "country": "Malawi",
+      "value": 113181,
+      "abbreviation_3": "MWI",
+      "abbreviation_2": "MW"
+    },
+    {
+      "country": "Cuba",
+      "value": 111819,
+      "abbreviation_3": "CUB",
+      "abbreviation_2": "CU"
+    },
+    {
+      "country": "Cambodia",
+      "value": 111340,
+      "abbreviation_3": "KHM",
+      "abbreviation_2": "KH"
+    },
+    {
+      "country": "South Sudan",
+      "value": 110339,
+      "abbreviation_3": "SSD",
+      "abbreviation_2": "SS"
+    },
+    {
+      "country": "Zambia",
+      "value": 107917,
+      "abbreviation_3": "ZMB",
+      "abbreviation_2": "ZM"
+    },
+    {
+      "country": "Bulgaria",
+      "value": 102980,
+      "abbreviation_3": "BGR",
+      "abbreviation_2": "BG"
+    },
+    {
+      "country": "Senegal",
+      "value": 100882,
+      "abbreviation_3": "SEN",
+      "abbreviation_2": "SN"
+    },
+    {
+      "country": "Sweden",
+      "value": 93944,
+      "abbreviation_3": "SWE",
+      "abbreviation_2": "SE"
+    },
+    {
+      "country": "Serbia",
+      "value": 93928,
+      "abbreviation_3": "SRB",
+      "abbreviation_2": "RS"
+    },
+    {
+      "country": "Austria",
+      "value": 93223,
+      "abbreviation_3": "AUT",
+      "abbreviation_2": "AT"
+    },
+    {
+      "country": "Ecuador",
+      "value": 92204,
+      "abbreviation_3": "ECU",
+      "abbreviation_2": "EC"
+    },
+    {
+      "country": "Burundi",
+      "value": 91963,
+      "abbreviation_3": "BDI",
+      "abbreviation_2": "BI"
+    },
+    {
+      "country": "Haiti",
+      "value": 90966,
+      "abbreviation_3": "HTI",
+      "abbreviation_2": "HT"
+    },
+    {
+      "country": "Bolivia",
+      "value": 87812,
+      "abbreviation_3": "BOL",
+      "abbreviation_2": "BO"
+    },
+    {
+      "country": "Guatemala",
+      "value": 87523,
+      "abbreviation_3": "GTM",
+      "abbreviation_2": "GT"
+    },
+    {
+      "country": "Rwanda",
+      "value": 82826,
+      "abbreviation_3": "RWA",
+      "abbreviation_2": "RW"
+    },
+    {
+      "country": "Saudi Arabia",
+      "value": 77837,
+      "abbreviation_3": "SAU",
+      "abbreviation_2": "SA"
+    },
+    {
+      "country": "Tunisia",
+      "value": 74071,
+      "abbreviation_3": "TUN",
+      "abbreviation_2": "TN"
+    },
+    {
+      "country": "Switzerland",
+      "value": 73788,
+      "abbreviation_3": "CHE",
+      "abbreviation_2": "CH"
+    },
+    {
+      "country": "Togo",
+      "value": 71661,
+      "abbreviation_3": "TGO",
+      "abbreviation_2": "TG"
+    },
+    {
+      "country": "Dominican Republic",
+      "value": 70823,
+      "abbreviation_3": "DOM",
+      "abbreviation_2": "DO"
+    },
+    {
+      "country": "Sierra Leone",
+      "value": 70116,
+      "abbreviation_3": "SLE",
+      "abbreviation_2": "SL"
+    },
+    {
+      "country": "Azerbaijan",
+      "value": 67842,
+      "abbreviation_3": "AZE",
+      "abbreviation_2": "AZ"
+    },
+    {
+      "country": "Papua New Guinea",
+      "value": 67700,
+      "abbreviation_3": "PNG",
+      "abbreviation_2": "PG"
+    },
+    {
+      "country": "Finland",
+      "value": 59984,
+      "abbreviation_3": "FIN",
+      "abbreviation_2": "FI"
+    },
+    {
+      "country": "Denmark",
+      "value": 57275,
+      "abbreviation_3": "DNK",
+      "abbreviation_2": "DK"
+    },
+    {
+      "country": "Hong Kong",
+      "value": 57190,
+      "abbreviation_3": "HKG",
+      "abbreviation_2": "HK"
+    },
+    {
+      "country": "Croatia",
+      "value": 55029,
+      "abbreviation_3": "HRV",
+      "abbreviation_2": "HR"
+    },
+    {
+      "country": "Slovakia",
+      "value": 54167,
+      "abbreviation_3": "SVK",
+      "abbreviation_2": "SK"
+    },
+    {
+      "country": "Israel",
+      "value": 51294,
+      "abbreviation_3": "ISR",
+      "abbreviation_2": "IL"
+    },
+    {
+      "country": "Libya",
+      "value": 48610,
+      "abbreviation_3": "LBY",
+      "abbreviation_2": "LY"
+    },
+    {
+      "country": "Central African Republic",
+      "value": 48529,
+      "abbreviation_3": "CAF",
+      "abbreviation_2": "CF"
+    },
+    {
+      "country": "Laos",
+      "value": 47682,
+      "abbreviation_3": "LAO",
+      "abbreviation_2": "LA"
+    },
+    {
+      "country": "Honduras",
+      "value": 47670,
+      "abbreviation_3": "HND",
+      "abbreviation_2": "HN"
+    },
+    {
+      "country": "Tajikistan",
+      "value": 47595,
+      "abbreviation_3": "TJK",
+      "abbreviation_2": "TJ"
+    },
+    {
+      "country": "El Salvador",
+      "value": 47443,
+      "abbreviation_3": "SLV",
+      "abbreviation_2": "SV"
+    },
+    {
+      "country": "Georgia (country)",
+      "value": 45077,
+      "abbreviation_3": "GEO",
+      "abbreviation_2": "GE"
+    },
+    {
+      "country": "Liberia",
+      "value": 44333,
+      "abbreviation_3": "LBR",
+      "abbreviation_2": "LR"
+    },
+    {
+      "country": "Norway",
+      "value": 44143,
+      "abbreviation_3": "NOR",
+      "abbreviation_2": "NO"
+    },
+    {
+      "country": "Bosnia and Herzegovina",
+      "value": 42861,
+      "abbreviation_3": "BIH",
+      "abbreviation_2": "BA"
+    },
+    {
+      "country": "Turkmenistan",
+      "value": 42575,
+      "abbreviation_3": "TKM",
+      "abbreviation_2": "TM"
+    },
+    {
+      "country": "Kyrgyzstan",
+      "value": 42200,
+      "abbreviation_3": "KGZ",
+      "abbreviation_2": "KG"
+    },
+    {
+      "country": "Moldova",
+      "value": 41730,
+      "abbreviation_3": "MDA",
+      "abbreviation_2": "MD"
+    },
+    {
+      "country": "Lithuania",
+      "value": 40940,
+      "abbreviation_3": "LTU",
+      "abbreviation_2": "LT"
+    },
+    {
+      "country": "Paraguay",
+      "value": 39034,
+      "abbreviation_3": "PRY",
+      "abbreviation_2": "PY"
+    },
+    {
+      "country": "Palestine",
+      "value": 38937,
+      "abbreviation_3": "PSE",
+      "abbreviation_2": "PS"
+    },
+    {
+      "country": "Republic of the Congo",
+      "value": 38880,
+      "abbreviation_3": "COG",
+      "abbreviation_2": "CG"
+    },
+    {
+      "country": "New Zealand",
+      "value": 37686,
+      "abbreviation_3": "NZL",
+      "abbreviation_2": "NZ"
+    },
+    {
+      "country": "Ireland",
+      "value": 35550,
+      "abbreviation_3": "IRL",
+      "abbreviation_2": "IE"
+    },
+    {
+      "country": "Jordan",
+      "value": 34873,
+      "abbreviation_3": "JOR",
+      "abbreviation_2": "JO"
+    },
+    {
+      "country": "Puerto Rico",
+      "value": 34664,
+      "abbreviation_3": "PRI",
+      "abbreviation_2": "PR"
+    },
+    {
+      "country": "Lebanon",
+      "value": 34419,
+      "abbreviation_3": "LBN",
+      "abbreviation_2": "LB"
+    },
+    {
+      "country": "Uruguay",
+      "value": 33145,
+      "abbreviation_3": "URY",
+      "abbreviation_2": "UY"
+    },
+    {
+      "country": "Nicaragua",
+      "value": 31294,
+      "abbreviation_3": "NIC",
+      "abbreviation_2": "NI"
+    },
+    {
+      "country": "Costa Rica",
+      "value": 27861,
+      "abbreviation_3": "CRI",
+      "abbreviation_2": "CR"
+    },
+    {
+      "country": "Singapore",
+      "value": 27728,
+      "abbreviation_3": "SGP",
+      "abbreviation_2": "SG"
+    },
+    {
+      "country": "Mauritania",
+      "value": 27725,
+      "abbreviation_3": "MRT",
+      "abbreviation_2": "MR"
+    },
+    {
+      "country": "Latvia",
+      "value": 27614,
+      "abbreviation_3": "LVA",
+      "abbreviation_2": "LV"
+    },
+    {
+      "country": "Armenia",
+      "value": 27579,
+      "abbreviation_3": "ARM",
+      "abbreviation_2": "AM"
+    },
+    {
+      "country": "Lesotho",
+      "value": 24612,
+      "abbreviation_3": "LSO",
+      "abbreviation_2": "LS"
+    },
+    {
+      "country": "Albania",
+      "value": 23428,
+      "abbreviation_3": "ALB",
+      "abbreviation_2": "AL"
+    },
+    {
+      "country": "Jamaica",
+      "value": 22933,
+      "abbreviation_3": "JAM",
+      "abbreviation_2": "JM"
+    },
+    {
+      "country": "Slovenia",
+      "value": 21581,
+      "abbreviation_3": "SVN",
+      "abbreviation_2": "SI"
+    },
+    {
+      "country": "Panama",
+      "value": 21272,
+      "abbreviation_3": "PAN",
+      "abbreviation_2": "PA"
+    },
+    {
+      "country": "Eritrea",
+      "value": 20984,
+      "abbreviation_3": "ERI",
+      "abbreviation_2": "ER"
+    },
+    {
+      "country": "Mongolia",
+      "value": 20340,
+      "abbreviation_3": "MNG",
+      "abbreviation_2": "MN"
+    },
+    {
+      "country": "North Macedonia",
+      "value": 19863,
+      "abbreviation_3": "MKD",
+      "abbreviation_2": "MK"
+    },
+    {
+      "country": "Namibia",
+      "value": 18279,
+      "abbreviation_3": "NAM",
+      "abbreviation_2": "NA"
+    },
+    {
+      "country": "Gambia",
+      "value": 16975,
+      "abbreviation_3": "GMB",
+      "abbreviation_2": "GM"
+    },
+    {
+      "country": "Estonia",
+      "value": 16693,
+      "abbreviation_3": "EST",
+      "abbreviation_2": "EE"
+    },
+    {
+      "country": "Gabon",
+      "value": 15577,
+      "abbreviation_3": "GAB",
+      "abbreviation_2": "GA"
+    },
+    {
+      "country": "Guinea-Bissau",
+      "value": 15181,
+      "abbreviation_3": "GNB",
+      "abbreviation_2": "GW"
+    },
+    {
+      "country": "Equatorial Guinea",
+      "value": 14556,
+      "abbreviation_3": "GNQ",
+      "abbreviation_2": "GQ"
+    },
+    {
+      "country": "Botswana",
+      "value": 14197,
+      "abbreviation_3": "BWA",
+      "abbreviation_2": "BW"
+    },
+    {
+      "country": "Trinidad and Tobago",
+      "value": 12577,
+      "abbreviation_3": "TTO",
+      "abbreviation_2": "TT"
+    },
+    {
+      "country": "Mauritius",
+      "value": 11124,
+      "abbreviation_3": "MUS",
+      "abbreviation_2": "MU"
+    },
+    {
+      "country": "Timor-Leste",
+      "value": 10065,
+      "abbreviation_3": "TLS",
+      "abbreviation_2": "TL"
+    },
+    {
+      "country": "Kosovo",
+      "value": 9981,
+      "abbreviation_3": "UNK",
+      "abbreviation_2": "XK"
+    },
+    {
+      "country": "United Arab Emirates",
+      "value": 9916,
+      "abbreviation_3": "ARE",
+      "abbreviation_2": "AE"
+    },
+    {
+      "country": "Oman",
+      "value": 9597,
+      "abbreviation_3": "OMN",
+      "abbreviation_2": "OM"
+    },
+    {
+      "country": "Cyprus",
+      "value": 9499,
+      "abbreviation_3": "CYP",
+      "abbreviation_2": "CY"
+    },
+    {
+      "country": "Eswatini",
+      "value": 9475,
+      "abbreviation_3": "SWZ",
+      "abbreviation_2": "SZ"
+    },
+    {
+      "country": "Kuwait",
+      "value": 8624,
+      "abbreviation_3": "KWT",
+      "abbreviation_2": "KW"
+    },
+    {
+      "country": "Djibouti",
+      "value": 8596,
+      "abbreviation_3": "DJI",
+      "abbreviation_2": "DJ"
+    },
+    {
+      "country": "Fiji",
+      "value": 8553,
+      "abbreviation_3": "FJI",
+      "abbreviation_2": "FJ"
+    },
+    {
+      "country": "Montenegro",
+      "value": 7209,
+      "abbreviation_3": "MNE",
+      "abbreviation_2": "ME"
+    },
+    {
+      "country": "Comoros",
+      "value": 6119,
+      "abbreviation_3": "COM",
+      "abbreviation_2": "KM"
+    },
+    {
+      "country": "Guyana",
+      "value": 6049,
+      "abbreviation_3": "GUY",
+      "abbreviation_2": "GY"
+    },
+    {
+      "country": "Bhutan",
+      "value": 4805,
+      "abbreviation_3": "BTN",
+      "abbreviation_2": "BT"
+    },
+    {
+      "country": "Réunion",
+      "value": 4797,
+      "abbreviation_3": "REU",
+      "abbreviation_2": "RE"
+    },
+    {
+      "country": "Luxembourg",
+      "value": 4642,
+      "abbreviation_3": "LUX",
+      "abbreviation_2": "LU"
+    },
+    {
+      "country": "Suriname",
+      "value": 4182,
+      "abbreviation_3": "SUR",
+      "abbreviation_2": "SR"
+    },
+    {
+      "country": "Solomon Islands",
+      "value": 4113,
+      "abbreviation_3": "SLB",
+      "abbreviation_2": "SB"
+    },
+    {
+      "country": "Malta",
+      "value": 3928,
+      "abbreviation_3": "MLT",
+      "abbreviation_2": "MT"
+    },
+    {
+      "country": "Western Sahara",
+      "value": 3678,
+      "abbreviation_3": "ESH",
+      "abbreviation_2": "EH"
+    },
+    {
+      "country": "Guadeloupe",
+      "value": 3560,
+      "abbreviation_3": "GLP",
+      "abbreviation_2": "GP"
+    },
+    {
+      "country": "Martinique",
+      "value": 3502,
+      "abbreviation_3": "MTQ",
+      "abbreviation_2": "MQ"
+    },
+    {
+      "country": "Bahamas",
+      "value": 3480,
+      "abbreviation_3": "BHS",
+      "abbreviation_2": "BS"
+    },
+    {
+      "country": "Macau",
+      "value": 3423,
+      "abbreviation_3": "MAC",
+      "abbreviation_2": "MO"
+    },
+    {
+      "country": "Bahrain",
+      "value": 3278,
+      "abbreviation_3": "BHR",
+      "abbreviation_2": "BH"
+    },
+    {
+      "country": "Barbados",
+      "value": 2996,
+      "abbreviation_3": "BRB",
+      "abbreviation_2": "BB"
+    },
+    {
+      "country": "Qatar",
+      "value": 2771,
+      "abbreviation_3": "QAT",
+      "abbreviation_2": "QA"
+    },
+    {
+      "country": "Cape Verde",
+      "value": 2642,
+      "abbreviation_3": "CPV",
+      "abbreviation_2": "CV"
+    },
+    {
+      "country": "Iceland",
+      "value": 2612,
+      "abbreviation_3": "ISL",
+      "abbreviation_2": "IS"
+    },
+    {
+      "country": "Brunei",
+      "value": 2400,
+      "abbreviation_3": "BRN",
+      "abbreviation_2": "BN"
+    },
+    {
+      "country": "Belize",
+      "value": 2025,
+      "abbreviation_3": "BLZ",
+      "abbreviation_2": "BZ"
+    },
+    {
+      "country": "Curaçao",
+      "value": 1844,
+      "abbreviation_3": "CUW",
+      "abbreviation_2": "CW"
+    },
+    {
+      "country": "New Caledonia",
+      "value": 1818,
+      "abbreviation_3": "NCL",
+      "abbreviation_2": "NC"
+    },
+    {
+      "country": "Vanuatu",
+      "value": 1629,
+      "abbreviation_3": "VUT",
+      "abbreviation_2": "VU"
+    },
+    {
+      "country": "Saint Lucia",
+      "value": 1544,
+      "abbreviation_3": "LCA",
+      "abbreviation_2": "LC"
+    },
+    {
+      "country": "French Guiana",
+      "value": 1502,
+      "abbreviation_3": "GUF",
+      "abbreviation_2": "GF"
+    },
+    {
+      "country": "Samoa",
+      "value": 1334,
+      "abbreviation_3": "WSM",
+      "abbreviation_2": "WS"
+    },
+    {
+      "country": "United States Virgin Islands",
+      "value": 1321,
+      "abbreviation_3": "VIR",
+      "abbreviation_2": "VI"
+    },
+    {
+      "country": "São Tomé and Príncipe",
+      "value": 1287,
+      "abbreviation_3": "STP",
+      "abbreviation_2": "ST"
+    },
+    {
+      "country": "Maldives",
+      "value": 1230,
+      "abbreviation_3": "MDV",
+      "abbreviation_2": "MV"
+    },
+    {
+      "country": "Saint Vincent and the Grenadines",
+      "value": 1165,
+      "abbreviation_3": "VCT",
+      "abbreviation_2": "VC"
+    },
+    {
+      "country": "Jersey",
+      "value": 1150,
+      "abbreviation_3": "JEY",
+      "abbreviation_2": "JE"
+    },
+    {
+      "country": "Guam",
+      "value": 1144,
+      "abbreviation_3": "GUM",
+      "abbreviation_2": "GU"
+    },
+    {
+      "country": "Seychelles",
+      "value": 1051,
+      "abbreviation_3": "SYC",
+      "abbreviation_2": "SC"
+    },
+    {
+      "country": "Grenada",
+      "value": 1037,
+      "abbreviation_3": "GRD",
+      "abbreviation_2": "GD"
+    },
+    {
+      "country": "Aruba",
+      "value": 1034,
+      "abbreviation_3": "ABW",
+      "abbreviation_2": "AW"
+    },
+    {
+      "country": "French Polynesia",
+      "value": 1026,
+      "abbreviation_3": "PYF",
+      "abbreviation_2": "PF"
+    },
+    {
+      "country": "Kiribati",
+      "value": 934,
+      "abbreviation_3": "KIR",
+      "abbreviation_2": "KI"
+    },
+    {
+      "country": "Isle of Man",
+      "value": 882,
+      "abbreviation_3": "IMN",
+      "abbreviation_2": "IM"
+    },
+    {
+      "country": "Micronesia",
+      "value": 860,
+      "abbreviation_3": "FSM",
+      "abbreviation_2": "FM"
+    },
+    {
+      "country": "Mayotte",
+      "value": 854,
+      "abbreviation_3": "MYT",
+      "abbreviation_2": "YT"
+    },
+    {
+      "country": "Dominica",
+      "value": 849,
+      "abbreviation_3": "DMA",
+      "abbreviation_2": "DM"
+    },
+    {
+      "country": "Monaco",
+      "value": 817,
+      "abbreviation_3": "MCO",
+      "abbreviation_2": "MC"
+    },
+    {
+      "country": "Tonga",
+      "value": 674,
+      "abbreviation_3": "TON",
+      "abbreviation_2": "TO"
+    },
+    {
+      "country": "Antigua and Barbuda",
+      "value": 643,
+      "abbreviation_3": "ATG",
+      "abbreviation_2": "AG"
+    },
+    {
+      "country": "Guernsey",
+      "value": 595,
+      "abbreviation_3": "GGY",
+      "abbreviation_2": "GG"
+    },
+    {
+      "country": "Bermuda",
+      "value": 573,
+      "abbreviation_3": "BMU",
+      "abbreviation_2": "BM"
+    },
+    {
+      "country": "Faroe Islands",
+      "value": 564,
+      "abbreviation_3": "FRO",
+      "abbreviation_2": "FO"
+    },
+    {
+      "country": "Greenland",
+      "value": 551,
+      "abbreviation_3": "GRL",
+      "abbreviation_2": "GL"
+    },
+    {
+      "country": "Andorra",
+      "value": 491,
+      "abbreviation_3": "AND",
+      "abbreviation_2": "AD"
+    },
+    {
+      "country": "Saint Kitts and Nevis",
+      "value": 466,
+      "abbreviation_3": "KNA",
+      "abbreviation_2": "KN"
+    },
+    {
+      "country": "Cayman Islands",
+      "value": 351,
+      "abbreviation_3": "CYM",
+      "abbreviation_2": "KY"
+    },
+    {
+      "country": "Sint Maarten",
+      "value": 347,
+      "abbreviation_3": "SXM",
+      "abbreviation_2": "SX"
+    },
+    {
+      "country": "Turks and Caicos Islands",
+      "value": 342,
+      "abbreviation_3": "TCA",
+      "abbreviation_2": "TC"
+    },
+    {
+      "country": "American Samoa",
+      "value": 334,
+      "abbreviation_3": "ASM",
+      "abbreviation_2": "AS"
+    },
+    {
+      "country": "Liechtenstein",
+      "value": 300,
+      "abbreviation_3": "LIE",
+      "abbreviation_2": "LI"
+    },
+    {
+      "country": "Marshall Islands",
+      "value": 271,
+      "abbreviation_3": "MHL",
+      "abbreviation_2": "MH"
+    },
+    {
+      "country": "San Marino",
+      "value": 270,
+      "abbreviation_3": "SMR",
+      "abbreviation_2": "SM"
+    },
+    {
+      "country": "Caribbean Netherlands",
+      "value": 258,
+      "abbreviation_3": "BES",
+      "abbreviation_2": "BQ"
+    },
+    {
+      "country": "Saint Martin",
+      "value": 255,
+      "abbreviation_3": "MAF",
+      "abbreviation_2": "MF"
+    },
+    {
+      "country": "Gibraltar",
+      "value": 250,
+      "abbreviation_3": "GIB",
+      "abbreviation_2": "GI"
+    },
+    {
+      "country": "British Virgin Islands",
+      "value": 233,
+      "abbreviation_3": "VGB",
+      "abbreviation_2": "VG"
+    },
+    {
+      "country": "Northern Mariana Islands",
+      "value": 212,
+      "abbreviation_3": "MNP",
+      "abbreviation_2": "MP"
+    },
+    {
+      "country": "Palau",
+      "value": 204,
+      "abbreviation_3": "PLW",
+      "abbreviation_2": "PW"
+    },
+    {
+      "country": "Cook Islands",
+      "value": 132,
+      "abbreviation_3": "COK",
+      "abbreviation_2": "CK"
+    },
+    {
+      "country": "Anguilla",
+      "value": 96,
+      "abbreviation_3": "AIA",
+      "abbreviation_2": "AI"
+    },
+    {
+      "country": "Tuvalu",
+      "value": 90,
+      "abbreviation_3": "TUV",
+      "abbreviation_2": "TV"
+    },
+    {
+      "country": "Nauru",
+      "value": 89,
+      "abbreviation_3": "NRU",
+      "abbreviation_2": "NR"
+    },
+    {
+      "country": "Saint Helena, Ascension and Tristan da Cunha",
+      "value": 89,
+      "abbreviation_3": "SHN",
+      "abbreviation_2": "SH"
+    },
+    {
+      "country": "Wallis and Futuna",
+      "value": 88,
+      "abbreviation_3": "WLF",
+      "abbreviation_2": "WF"
+    },
+    {
+      "country": "Saint Pierre and Miquelon",
+      "value": 82,
+      "abbreviation_3": "SPM",
+      "abbreviation_2": "PM"
+    },
+    {
+      "country": "Saint Barthélemy",
+      "value": 70,
+      "abbreviation_3": "BLM",
+      "abbreviation_2": "BL"
+    },
+    {
+      "country": "Montserrat",
+      "value": 60,
+      "abbreviation_3": "MSR",
+      "abbreviation_2": "MS"
+    },
+    {
+      "country": "Falkland Islands",
+      "value": 27,
+      "abbreviation_3": "FLK",
+      "abbreviation_2": "FK"
+    },
+    {
+      "country": "Niue",
+      "value": 27,
+      "abbreviation_3": "NIU",
+      "abbreviation_2": "NU"
+    },
+    {
+      "country": "Tokelau",
+      "value": 14,
+      "abbreviation_3": "TKL",
+      "abbreviation_2": "TK"
+    },
+    {
+      "country": "Vatican City",
+      "value": 13,
+      "abbreviation_3": "VAT",
+      "abbreviation_2": "VA"
+    }
+  ]
+}

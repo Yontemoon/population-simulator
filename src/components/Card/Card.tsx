@@ -1,7 +1,13 @@
 import "./Card.css";
+import clsx from "clsx";
 
-const Card = ({ children }: { children: React.ReactNode }) => {
-  return <div className="card-container">{children}</div>;
+type PropTypes = {
+  children: React.ReactNode;
+  className?: string;
+};
+
+const Card = ({ children, className }: PropTypes) => {
+  return <div className={clsx("card-container", className)}>{children}</div>;
 };
 
 export default Card;

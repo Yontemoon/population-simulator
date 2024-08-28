@@ -1,3 +1,7 @@
+export type TCountryJSON = {
+  country: TCountry[];
+};
+
 export type TCountry = {
   country: string;
   abbreviation_3: string;
