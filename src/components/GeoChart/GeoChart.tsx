@@ -32,22 +32,42 @@ const GeoChart = ({ data, selectedCountry }: PropTypes) => {
     }
   };
 
-  const mousemoveEffect = (
-    event: PointerEvent,
-    d: TGeoJSONFeature
-    // tooltipRef: React.RefObject<HTMLDivElement>
-  ) => {
-    const mouseCoordinates = pointer(event);
-    const x = mouseCoordinates[0];
-    const y = mouseCoordinates[1];
+  const mousemoveEffect = (event: PointerEvent, d: TGeoJSONFeature) => {
     const tooltipDiv = tooltipRef.current;
-    if (tooltipDiv) {
-      const div = select(tooltipDiv);
-      div
-        .html(d.properties.name)
-        .style("left", x + 5 + "px")
-        .style("top", y + 5 + "px");
+    const svgElement = svgRef.current;
+
+    if (!tooltipDiv || !svgElement) return;
+
+    const div = select(tooltipDiv);
+    const mouseCoordinates = pointer(event);
+    let [x, y] = mouseCoordinates;
+
+    const tooltipWidth = tooltipDiv.offsetWidth;
+    const tooltipHeight = tooltipDiv.offsetHeight;
+    const { width: svgWidth, height: svgHeight } =
+      svgElement.getBoundingClientRect();
+
+    if (x + tooltipWidth > svgWidth) {
+      x = svgWidth - tooltipWidth - 10;
     }
+
+    if (y + tooltipHeight > svgHeight) {
+      y = svgHeight - tooltipHeight - 10;
+    }
+
+    if (x < 0) {
+      x = 10;
+    }
+
+    if (y < 0) {
+      y = 10;
+    }
+
+    div
+      .html(d.properties.name)
+      .style("left", `${x + 5}px`)
+      .style("top", `${y + 5}px`)
+      .style("visibility", "visible");
   };
 
   const mouseleaveEffect = (_event: PointerEvent, d: TGeoJSONFeature) => {

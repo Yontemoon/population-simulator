@@ -32,7 +32,7 @@ export default function Home() {
         </div>
         <CountryList countryList={countryList} />
 
-        <div id="anchor"></div>
+        <div id="anchor" />
       </div>
     </>
   );
