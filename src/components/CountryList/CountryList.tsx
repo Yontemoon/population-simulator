@@ -15,8 +15,9 @@ const CountryList = ({ countryList }: PropTypes) => {
           <AddCountry>
             <Card className="country-content">
               <div>{i + 1}.</div>
-              <div>
-                {country.country} - Count: {country.count}
+              <div className="country-info">
+                <span className="country-line">{country.country} </span>- Count:{" "}
+                {country.count}
               </div>
               <img
                 className="country-flag"

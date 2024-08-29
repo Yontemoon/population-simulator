@@ -11,11 +11,9 @@ const countiesGeoTyped = countiesGeo as TGeoJSON;
 const currentTime = getTime();
 
 export default function DeathSimulator() {
-  const { countryList, selectedCountry, totalCountries } = useCountrySimulation(
-    {
-      countryData: deathsPerCountry,
-    }
-  );
+  const { countryList, selectedCountry, totalPeople } = useCountrySimulation({
+    countryData: deathsPerCountry,
+  });
 
   return (
     <>
@@ -24,9 +22,11 @@ export default function DeathSimulator() {
 
         <GeoChart data={countiesGeoTyped} selectedCountry={selectedCountry} />
         <div className="countries-stat">
-          <p>{selectedCountry}</p>
+          {selectedCountry?.map((country, i) => (
+            <p key={i}>{country.country}</p>
+          ))}
           <p>
-            Total Deaths since {currentTime}: {totalCountries}
+            Total Deaths since {currentTime}: {totalPeople}
           </p>
         </div>
         <CountryList countryList={countryList} />

@@ -1,11 +1,12 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import "./GeoChart.css";
 import { select, geoPath, geoMercator, pointer } from "d3";
 import { useEffect, useRef } from "react";
-import { TGeoJSON, TGeoJSONFeature } from "../../types";
+import { TGeoJSON, TGeoJSONFeature, TCountry } from "../../types";
 
 type PropTypes = {
   data: TGeoJSON;
-  selectedCountry: string | null;
+  selectedCountry: TCountry[] | null;
 };
 
 const GeoChart = ({ data, selectedCountry }: PropTypes) => {
@@ -31,6 +32,13 @@ const GeoChart = ({ data, selectedCountry }: PropTypes) => {
       svg.style("stroke", "black").style("stroke-width", "1px");
     }
   };
+
+  function handleMapFill(feature: TGeoJSONFeature): string {
+    const matchedCountry = selectedCountry?.find(
+      (selected) => selected.abbreviation_3 === feature.properties.adm0_a3
+    );
+    return matchedCountry ? "#197278" : "#ccc";
+  }
 
   const mousemoveEffect = (event: PointerEvent, d: TGeoJSONFeature) => {
     const tooltipDiv = tooltipRef.current;
@@ -102,9 +110,7 @@ const GeoChart = ({ data, selectedCountry }: PropTypes) => {
         .attr("id", (feature: TGeoJSONFeature) => feature.properties.adm0_a3)
         .attr("class", "country")
         .attr("d", (feature: TGeoJSONFeature) => pathGenerator(feature))
-        .attr("fill", (feature) =>
-          feature.properties.adm0_a3 === selectedCountry ? "#197278" : "#ccc"
-        )
+        .attr("fill", (feature) => handleMapFill(feature))
         .on("mouseover", mouseoverEffect)
         .on("mousemove", mousemoveEffect)
         .on("mouseleave", mouseleaveEffect);
