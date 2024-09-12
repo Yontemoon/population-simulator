@@ -5,9 +5,9 @@ import {
   precomputeCumulativeDistrubution,
   generatePeople,
 } from "../helper/countries";
-// import { OCCURANCE } from "../helper/constants";
 import { useLocation } from "react-router-dom";
 import useInterval from "./useInterval";
+import { OCCURANCE } from "../helper/constants";
 
 type PropTypes = {
   countryData: TCountryJSON;
@@ -45,12 +45,12 @@ const useCountrySimulation = ({ countryData }: PropTypes) => {
     setTotalPeople(totalPeople + numberOfPeople);
     setRecentlyAddedCountries(countries);
     handleNewCountry(countries);
-  }, 2000);
+  }, OCCURANCE);
 
   return {
     countryList,
     totalPeople,
-    selectedCountry: recentlyAddedCountries,
+    recentlyAddedCountries,
   };
 };
 

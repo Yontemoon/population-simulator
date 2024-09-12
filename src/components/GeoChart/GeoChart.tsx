@@ -14,12 +14,7 @@ const GeoChart = ({ data, selectedCountry }: PropTypes) => {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const tooltipRef = useRef<HTMLDivElement>(null);
 
-  const mouseoverEffect = (
-    _event: PointerEvent,
-    d: TGeoJSONFeature
-    // svgRef: React.RefObject<SVGSVGElement>,
-    // tooltipRef: React.RefObject<HTMLDivElement>
-  ) => {
+  const mouseoverEffect = (_event: PointerEvent, d: TGeoJSONFeature) => {
     const toolTipDiv = tooltipRef.current;
     const svgElement = svgRef.current;
     if (toolTipDiv) {
