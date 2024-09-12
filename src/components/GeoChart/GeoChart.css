@@ -37,3 +37,7 @@
 .country {
   stroke: #999;
 }
+
+.country:hover {
+  cursor: pointer;
+}

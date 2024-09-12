@@ -13,7 +13,10 @@ const CountryList = ({ countryList }: PropTypes) => {
       {countryList.map((country, i) => (
         <SwapCountry key={country.abbreviation_2}>
           <AddCountry>
-            <Card className="country-content">
+            <Card
+              className="country-content"
+              id={`${country.abbreviation_3}-card`}
+            >
               <div>{i + 1}.</div>
               <div className="country-info">
                 <span className="country-line">{country.country} </span>- Count:{" "}
