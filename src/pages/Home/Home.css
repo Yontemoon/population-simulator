@@ -1,6 +1,22 @@
 .countries-stat {
   display: flex;
   justify-content: space-between;
+  height: 100%;
+}
+
+.countries-stat p {
+  display: inline-block;
+  align-self: flex-end;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 3px;
+}
+
+.countries-stat p span {
+  display: inline-block;
+  min-width: 40px;
+  text-align: right;
 }
 
 .selected_Country {

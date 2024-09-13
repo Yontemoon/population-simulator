@@ -27,7 +27,9 @@ export default function Home() {
         <div className="home-header-container">
           <h1 className="home-header">Births Occuring Around the World</h1>
           <div className="countries-stat">
-            Total Births since {currentTime}: {totalPeople}
+            <p>
+              Total Births since {currentTime}: <span>{totalPeople}</span>
+            </p>
           </div>
         </div>
 

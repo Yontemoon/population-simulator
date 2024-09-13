@@ -1,4 +1,3 @@
-import "./DeathSimulator.css";
 import countiesGeo from "../../json/countries.geo.json";
 import GeoChart from "../../components/GeoChart/GeoChart";
 import { getTime } from "../../helper/utils";
@@ -27,7 +26,9 @@ export default function DeathSimulator() {
         <div className="home-header-container">
           <h1 className="home-header">Deaths Occuring Around the World</h1>
           <div className="countries-stat">
-            Total Deaths since {currentTime}: {totalPeople}
+            <p>
+              Total deaths since {currentTime}: <span>{totalPeople}</span>
+            </p>
           </div>
         </div>
 
