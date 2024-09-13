@@ -1,6 +1,8 @@
 # Simple Population Simulator
 
-This project simulates births and deaths around the world using React.js. It visualizes population changes over time, making use of D3.js for geographical mapping and dynamic data display. The simulation generates countries based on population and birth rates and shows real-time population trends.
+This project simulates births and deaths around the world using React.js. It visualizes population changes over time, making use of D3.js for geographical mapping and dynamic data display. The simulation generates countries based on birth and death rates for each country.
+
+![screengrab](/public/screengrab.PNG?raw=true "Screenshot")
 
 ## Features
 
@@ -41,14 +43,12 @@ http://localhost:3000
 
 ## Technology Used
 
-- React.js: Frontend framework
-- D3.js: Data-driven document manipulation and visualization
-- TypeScript: Type-safe JavaScript
-- Tailwind CSS: Utility-first CSS framework for styling
-- ESLint: Linting for consistent and error-free code
-- Vite: Build tool for development
+- TypeScript
+- React.js
+- D3.js
+- Framer Motion
 
-## Cntributing
+## Contributing
 
 It goes without say, if you want to contribute, you are welcome to! To contribute:
 
@@ -59,7 +59,7 @@ It goes without say, if you want to contribute, you are welcome to! To contribut
 git checkout -b new-branch
 ```
 
-3. Commit and push your changes
+3. Commit and push your work:
 
 ```bash
 git add .
@@ -67,7 +67,7 @@ git commit -m "Changes made!"
 git push
 ```
 
-4. Creae a pull request
+4. Create a pull request
 
 ## Contact
 
