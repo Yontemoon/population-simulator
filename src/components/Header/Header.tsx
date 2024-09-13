@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import "./Header.css";
 import { Link, useLocation } from "react-router-dom";
+import { TITLE } from "../../helper/constants";
 
 const Header = () => {
   const { pathname } = useLocation();
@@ -9,7 +10,7 @@ const Header = () => {
     <header className="flex-wrapper">
       <div className="header-container container">
         <h1>
-          <Link to="/">Life By Numbers</Link>
+          <Link to="/">{TITLE}</Link>
         </h1>
         <nav className="nav-container">
           <ul className="nav-menu">

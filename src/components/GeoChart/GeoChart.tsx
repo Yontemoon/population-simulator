@@ -3,7 +3,6 @@ import "./GeoChart.css";
 import { select, geoPath, geoMercator, pointer } from "d3";
 import { useEffect, useRef } from "react";
 import { TGeoJSON, TGeoJSONFeature, TCountry } from "../../types";
-import { useLocation } from "react-router-dom";
 
 type PropTypes = {
   data: TGeoJSON;
@@ -14,7 +13,6 @@ const GeoChart = ({ data, selectedCountry }: PropTypes) => {
   const svgRef = useRef<SVGSVGElement>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
   const tooltipRef = useRef<HTMLDivElement>(null);
-  const { pathname } = useLocation();
 
   const mouseoverEffect = (_event: PointerEvent, d: TGeoJSONFeature) => {
     const toolTipDiv = tooltipRef.current;
@@ -87,13 +85,9 @@ const GeoChart = ({ data, selectedCountry }: PropTypes) => {
     }
   };
 
-  const handleClick = (_event: PointerEvent, d: TGeoJSONFeature) => {
+  const clickCountry = (_event: PointerEvent, d: TGeoJSONFeature) => {
     const countryAbv = d.properties.adm0_a3;
-    console.log(countryAbv);
-    console.log(pathname);
-
-    const countryIsPresent = document.getElementById(countryAbv);
-
+    const countryIsPresent = document.getElementById(countryAbv + "-card");
     if (countryIsPresent) {
       console.log(countryIsPresent);
       window.location.hash = `#${countryAbv}-card`;
@@ -124,7 +118,7 @@ const GeoChart = ({ data, selectedCountry }: PropTypes) => {
         .on("mouseover", mouseoverEffect)
         .on("mousemove", mousemoveEffect)
         .on("mouseleave", mouseleaveEffect)
-        .on("click", handleClick);
+        .on("click", clickCountry);
     }
   }, [data, wrapperRef, svgRef, selectedCountry]);
 
