@@ -14,6 +14,14 @@
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   scroll-behavior: smooth;
+
+  --primary-text: black;
+  --primary-background: #edddd4;
+  --link-text: #a866ff;
+  --link-text-secondary: #535bf2;
+  --default-country-fill: #ccc;
+  --active-country-fill: #197278;
+  --active-country-fill-deaths: #781919;
 }
 
 body {
@@ -36,17 +44,17 @@ li {
 
 a {
   font-weight: 500;
-  color: hsl(266, 100%, 70%);
+  color: var(--link-text);
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: var(--link-text-secondary);
 }
 
 h1 {
   font-size: 2em;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 header {

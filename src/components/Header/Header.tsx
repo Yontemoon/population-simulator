@@ -9,9 +9,9 @@ const Header = () => {
   return (
     <header className="flex-wrapper">
       <div className="header-container container">
-        <h1>
-          <Link to="/">{TITLE}</Link>
-        </h1>
+        <Link to="/" className="header-title">
+          {TITLE}
+        </Link>
         <nav className="nav-container">
           <ul className="nav-menu">
             <li className={clsx("nav-entry", pathname === "/" && "nav-active")}>

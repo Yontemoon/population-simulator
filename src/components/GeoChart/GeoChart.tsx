@@ -3,6 +3,7 @@ import "./GeoChart.css";
 import { select, geoPath, geoMercator, pointer } from "d3";
 import { useEffect, useRef } from "react";
 import { TGeoJSON, TGeoJSONFeature, TCountry } from "../../types";
+import { useLocation } from "react-router-dom";
 
 type PropTypes = {
   data: TGeoJSON;
@@ -13,6 +14,7 @@ const GeoChart = ({ data, selectedCountry }: PropTypes) => {
   const svgRef = useRef<SVGSVGElement>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
   const tooltipRef = useRef<HTMLDivElement>(null);
+  const { pathname } = useLocation();
 
   const mouseoverEffect = (_event: PointerEvent, d: TGeoJSONFeature) => {
     const toolTipDiv = tooltipRef.current;
@@ -29,10 +31,25 @@ const GeoChart = ({ data, selectedCountry }: PropTypes) => {
   };
 
   function handleMapFill(feature: TGeoJSONFeature): string {
+    const activeFillBirths = getComputedStyle(document.documentElement)
+      .getPropertyValue("--active-country-fill")
+      .trim();
+
+    const activeFillDeaths = getComputedStyle(document.documentElement)
+      .getPropertyValue("--active-country-fill-deaths")
+      .trim();
+
+    const defaultFill = getComputedStyle(document.documentElement)
+      .getPropertyValue("--default-country-fill")
+      .trim();
     const matchedCountry = selectedCountry?.find(
       (selected) => selected.abbreviation_3 === feature.properties.adm0_a3
     );
-    return matchedCountry ? "#197278" : "#ccc";
+    return matchedCountry
+      ? pathname === "/"
+        ? activeFillBirths
+        : activeFillDeaths
+      : defaultFill;
   }
 
   const mousemoveEffect = (event: PointerEvent, d: TGeoJSONFeature) => {
