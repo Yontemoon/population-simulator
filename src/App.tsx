@@ -1,13 +1,15 @@
-import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home/Home";
-import DeathSimulator from "./pages/DeathSimulator/DeathSimulator";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import "./App.css";
+import { Routes, Route } from "react-router-dom"
+import Home from "./pages/Home/Home"
+import DeathSimulator from "./pages/DeathSimulator/DeathSimulator"
+import Header from "./components/Header/Header"
+import Footer from "./components/Footer/Footer"
+import { Analytics } from "@vercel/analytics/next"
+import "./App.css"
 
 function App() {
   return (
     <>
+      <Analytics />
       <Header />
       <main className="flex-wrapper">
         <Routes>
@@ -17,7 +19,7 @@ function App() {
       </main>
       <Footer />
     </>
-  );
+  )
 }
 
-export default App;
+export default App
