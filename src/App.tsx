@@ -3,7 +3,7 @@ import Home from "./pages/Home/Home"
 import DeathSimulator from "./pages/DeathSimulator/DeathSimulator"
 import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 import "./App.css"
 
 function App() {
